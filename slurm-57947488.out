@@ -1,0 +1,215 @@
+Model built using 1168 instances
+Removing test instances to apply model on later...
+Snapshot of data being used:
+                   Y  Min_RGB_9_2_19_R  ...  Min_RGB_9_2_19_B  1stQu_RGB_9_2_19_R
+ID                                      ...                                      
+EL19_5166  15758.250                31  ...                17               70.50
+EL19_6459  15053.580                38  ...                27               78.50
+EL19_5715  15064.320                24  ...                24               49.25
+EL19_6527  13713.625                31  ...                21               75.75
+EL19_5847  17317.575                43  ...                24              108.00
+
+[5 rows x 5 columns]
+
+
+===>  Grid search started  <===
+Round 1 of 10
+Round 2 of 10
+Round 3 of 10
+Round 4 of 10
+Round 5 of 10
+Round 6 of 10
+Round 7 of 10
+Round 8 of 10
+Round 9 of 10
+Round 10 of 10
+                                     mean_test_score
+max_depth max_features n_estimators                 
+10.0      log2         1000.0          -6.643202e+06
+          sqrt         500.0           -6.644158e+06
+                       1000.0          -6.647766e+06
+          log2         500.0           -6.653213e+06
+          0.5          1000.0          -6.668773e+06
+Parameter sweep time: 6641.902662 seconds
+Parameters selected: max_depth=10.0, max_features=log2, n_estimators=1000.0
+Grid search done. Time: 6642.566020 s
+
+
+===>  ML Pipeline started  <===
+Running 1 of 100
+Running 2 of 100
+Running 3 of 100
+Running 4 of 100
+Running 5 of 100
+Running 6 of 100
+Running 7 of 100
+Running 8 of 100
+Running 9 of 100
+Running 10 of 100
+Running 11 of 100
+Running 12 of 100
+Running 13 of 100
+Running 14 of 100
+Running 15 of 100
+Running 16 of 100
+Running 17 of 100
+Running 18 of 100
+Running 19 of 100
+Running 20 of 100
+Running 21 of 100
+Running 22 of 100
+Running 23 of 100
+Running 24 of 100
+Running 25 of 100
+Running 26 of 100
+Running 27 of 100
+Running 28 of 100
+Running 29 of 100
+Running 30 of 100
+Running 31 of 100
+Running 32 of 100
+Running 33 of 100
+Running 34 of 100
+Running 35 of 100
+Running 36 of 100
+Running 37 of 100
+Running 38 of 100
+Running 39 of 100
+Running 40 of 100
+Running 41 of 100
+Running 42 of 100
+Running 43 of 100
+Running 44 of 100
+Running 45 of 100
+Running 46 of 100
+Running 47 of 100
+Running 48 of 100
+Running 49 of 100
+Running 50 of 100
+Running 51 of 100
+Running 52 of 100
+Running 53 of 100
+Running 54 of 100
+Running 55 of 100
+Running 56 of 100
+Running 57 of 100
+Running 58 of 100
+Running 59 of 100
+Running 60 of 100
+Running 61 of 100
+Running 62 of 100
+Running 63 of 100
+Running 64 of 100
+Running 65 of 100
+Running 66 of 100
+Running 67 of 100
+Running 68 of 100
+Running 69 of 100
+Running 70 of 100
+Running 71 of 100
+Running 72 of 100
+Running 73 of 100
+Running 74 of 100
+Running 75 of 100
+Running 76 of 100
+Running 77 of 100
+Running 78 of 100
+Running 79 of 100
+Running 80 of 100
+Running 81 of 100
+Running 82 of 100
+Running 83 of 100
+Running 84 of 100
+Running 85 of 100
+Running 86 of 100
+Running 87 of 100
+Running 88 of 100
+Running 89 of 100
+Running 90 of 100
+Running 91 of 100
+Running 92 of 100
+Running 93 of 100
+Running 94 of 100
+Running 95 of 100
+Running 96 of 100
+Running 97 of 100
+Running 98 of 100
+Running 99 of 100
+Running 100 of 100
+ML Pipeline time: 2669.631735 seconds
+
+
+===>  ML Results  <===
+
+Validation Set Scores:
+Metric	Mean	std	SE
+
+Metric	Mean	std	SE
+MSE	6642529.965046925	13014.215515639175	1301.4215515639175
+EVS	0.20916412892500635	0.0015493772294615273	0.00015493772294615271
+R2	0.209163023781614	0.0015494281396395307	0.00015494281396395308
+PCC	0.45749042678859203	0.001733559354469153	0.0001733559354469153
+
+
+
+Test Set Scores:
+Metric	Mean	std	SE
+
+MSE	5290518.991459973	25639.343298478725	2563.9343298478725
+EVS	0.28544261608206023	0.003492180541436721	0.0003492180541436721
+R2	0.2765543575645055	0.003506021094364021	0.0003506021094364021
+PCC	0.5418491017890696	0.0038813910571754346	0.00038813910571754346
+
+
+finished!
+JobId=57947488 JobName=droneML2
+   UserId=lotrecks(1036009) GroupId=plb(2022) MCS_label=N/A
+   Priority=60271 Nice=0 Account=general QOS=lotrecks
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=02:35:54 TimeLimit=03:59:00 TimeMin=N/A
+   SubmitTime=2020-03-19T11:41:17 EligibleTime=2020-03-19T11:41:17
+   AccrueTime=2020-03-19T11:41:17
+   StartTime=2020-03-19T11:41:20 EndTime=2020-03-19T15:40:20 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2020-03-19T11:41:20
+   Partition=general-long AllocNode:Sid=dev-intel16-k80.i:19220
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=css-094
+   BatchHost=css-094
+   NumNodes=1 NumCPUs=2 NumTasks=1 CPUs/Task=2 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=2,mem=4G,node=1,billing=622
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=2 MinMemoryCPU=2G MinTmpDiskNode=0
+   Features=[intel14|intel16|intel18] DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/mnt/ufs18/home-118/lotrecks/Classes/module-2-LUA/droneML_job2.sb
+   WorkDir=/mnt/ufs18/home-118/lotrecks/Classes/module-2-LUA
+   Comment=stdout=/mnt/ufs18/home-118/lotrecks/Classes/module-2-LUA/slurm-57947488.out 
+   StdErr=/mnt/ufs18/home-118/lotrecks/Classes/module-2-LUA/slurm-57947488.out
+   StdIn=/dev/null
+   StdOut=/mnt/ufs18/home-118/lotrecks/Classes/module-2-LUA/slurm-57947488.out
+   Power=
+
+
+SLURM Job ID: 57947488
+WrkDir=/mnt/ufs18/home-118/lotrecks/Classes/module-2-LUA
+=========================================================================================================
+          JobID |            57947488 |      57947488.batch |     57947488.extern |          57947488.0 |
+        JobName |            droneML2 |               batch |              extern |              python |
+           User |            lotrecks |                     |                     |                     |
+       NodeList |             css-094 |             css-094 |             css-094 |             css-094 |
+         NNodes |                   1 |                   1 |                   1 |                   1 |
+         NTasks |                     |                   1 |                   1 |                   1 |
+          NCPUS |                   2 |                   2 |                   2 |                   2 |
+         ReqMem |                 2Gc |                 2Gc |                 2Gc |                 2Gc |
+      Timelimit |            03:59:00 |                     |                     |                     |
+        Elapsed |            02:35:22 |            02:35:22 |            02:35:22 |            02:35:16 |
+       TotalCPU |            02:35:12 |            00:00:01 |            00:00:00 |            02:35:12 |
+     AveCPULoad |            0.998927 |         0.000107273 |                     |            0.999571 |
+         MaxRSS |                     |               4476K |                     |             109848K |
+      MaxVMSize |                     |             162108K |                     |            1127264K |
+          Start | 2020-03-19T11:41:20 | 2020-03-19T11:41:20 | 2020-03-19T11:41:20 | 2020-03-19T11:41:26 |
+            End |             Unknown |             Unknown |             Unknown | 2020-03-19T14:16:42 |
+       ExitCode |                 0:0 |                 0:0 |                 0:0 |                 0:0 |
+          State |             RUNNING |             RUNNING |             RUNNING |           COMPLETED |
+=========================================================================================================

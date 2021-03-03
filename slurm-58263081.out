@@ -1,0 +1,213 @@
+Model built using 1168 instances
+Removing test instances to apply model on later...
+Snapshot of data being used:
+                   Y  BLUE_7_2_19  GREEN_7_2_19  NIR_7_2_19  RED_7_2_19
+ID                                                                     
+EL19_5098   9484.425     0.072238      0.115038    0.312846    0.138869
+EL19_5099  12293.775     0.067315      0.117966    0.338393    0.123294
+EL19_5137  14374.080     0.066221      0.111373    0.336597    0.125830
+EL19_5135  12882.870     0.064075      0.114575    0.337937    0.120117
+EL19_5134  14418.880     0.064187      0.111740    0.332572    0.122113
+
+
+===>  Grid search started  <===
+Round 1 of 10
+Round 2 of 10
+Round 3 of 10
+Round 4 of 10
+Round 5 of 10
+Round 6 of 10
+Round 7 of 10
+Round 8 of 10
+Round 9 of 10
+Round 10 of 10
+                                     mean_test_score
+max_depth max_features n_estimators                 
+10.0      0.5          1000.0          -4.770621e+06
+                       500.0           -4.779414e+06
+                       100.0           -4.811318e+06
+          sqrt         1000.0          -4.868602e+06
+                       500.0           -4.873385e+06
+Parameter sweep time: 17184.178379 seconds
+Parameters selected: max_depth=10.0, max_features=0.5, n_estimators=1000.0
+Grid search done. Time: 17184.872499 s
+
+
+===>  ML Pipeline started  <===
+Running 1 of 100
+Running 2 of 100
+Running 3 of 100
+Running 4 of 100
+Running 5 of 100
+Running 6 of 100
+Running 7 of 100
+Running 8 of 100
+Running 9 of 100
+Running 10 of 100
+Running 11 of 100
+Running 12 of 100
+Running 13 of 100
+Running 14 of 100
+Running 15 of 100
+Running 16 of 100
+Running 17 of 100
+Running 18 of 100
+Running 19 of 100
+Running 20 of 100
+Running 21 of 100
+Running 22 of 100
+Running 23 of 100
+Running 24 of 100
+Running 25 of 100
+Running 26 of 100
+Running 27 of 100
+Running 28 of 100
+Running 29 of 100
+Running 30 of 100
+Running 31 of 100
+Running 32 of 100
+Running 33 of 100
+Running 34 of 100
+Running 35 of 100
+Running 36 of 100
+Running 37 of 100
+Running 38 of 100
+Running 39 of 100
+Running 40 of 100
+Running 41 of 100
+Running 42 of 100
+Running 43 of 100
+Running 44 of 100
+Running 45 of 100
+Running 46 of 100
+Running 47 of 100
+Running 48 of 100
+Running 49 of 100
+Running 50 of 100
+Running 51 of 100
+Running 52 of 100
+Running 53 of 100
+Running 54 of 100
+Running 55 of 100
+Running 56 of 100
+Running 57 of 100
+Running 58 of 100
+Running 59 of 100
+Running 60 of 100
+Running 61 of 100
+Running 62 of 100
+Running 63 of 100
+Running 64 of 100
+Running 65 of 100
+Running 66 of 100
+Running 67 of 100
+Running 68 of 100
+Running 69 of 100
+Running 70 of 100
+Running 71 of 100
+Running 72 of 100
+Running 73 of 100
+Running 74 of 100
+Running 75 of 100
+Running 76 of 100
+Running 77 of 100
+Running 78 of 100
+Running 79 of 100
+Running 80 of 100
+Running 81 of 100
+Running 82 of 100
+Running 83 of 100
+Running 84 of 100
+Running 85 of 100
+Running 86 of 100
+Running 87 of 100
+Running 88 of 100
+Running 89 of 100
+Running 90 of 100
+Running 91 of 100
+Running 92 of 100
+Running 93 of 100
+Running 94 of 100
+Running 95 of 100
+Running 96 of 100
+Running 97 of 100
+Running 98 of 100
+Running 99 of 100
+Running 100 of 100
+ML Pipeline time: 16037.867601 seconds
+
+
+===>  ML Results  <===
+
+Validation Set Scores:
+Metric	Mean	std	SE
+
+Metric	Mean	std	SE
+MSE	4772454.806798469	10264.697597696617	1026.4697597696618
+EVS	0.4043471100272498	0.0012810309890379401	0.00012810309890379403
+R2	0.40434576410929784	0.0012811458362047303	0.00012811458362047302
+PCC	0.6385524604558889	0.0010988490487379393	0.00010988490487379393
+
+
+
+Test Set Scores:
+Metric	Mean	std	SE
+
+MSE	6032993.330850813	31732.542116339348	3173.2542116339346
+EVS	0.4457212260842408	0.0029216272979727636	0.0002921627297972764
+R2	0.4429513503037991	0.002929983304795361	0.0002929983304795361
+PCC	0.693258021712645	0.0027374758757116873	0.0002737475875711687
+
+
+finished!
+JobId=58263081 JobName=droneML3
+   UserId=lotrecks(1036009) GroupId=plb(2022) MCS_label=N/A
+   Priority=58732 Nice=0 Account=general QOS=lotrecks
+   JobState=RUNNING Reason=None Dependency=(null)
+   Requeue=1 Restarts=0 BatchFlag=1 Reboot=0 ExitCode=0:0
+   RunTime=09:14:25 TimeLimit=11:59:00 TimeMin=N/A
+   SubmitTime=2020-03-23T17:55:02 EligibleTime=2020-03-23T17:55:02
+   AccrueTime=2020-03-23T17:55:02
+   StartTime=2020-03-23T17:55:10 EndTime=2020-03-24T05:54:10 Deadline=N/A
+   SuspendTime=None SecsPreSuspend=0 LastSchedEval=2020-03-23T17:55:10
+   Partition=general-long AllocNode:Sid=dev-intel16-k80.i:23742
+   ReqNodeList=(null) ExcNodeList=(null)
+   NodeList=css-036
+   BatchHost=css-036
+   NumNodes=1 NumCPUs=2 NumTasks=1 CPUs/Task=2 ReqB:S:C:T=0:0:*:*
+   TRES=cpu=2,mem=4G,node=1,billing=622
+   Socks/Node=* NtasksPerN:B:S:C=0:0:*:* CoreSpec=*
+   MinCPUsNode=2 MinMemoryCPU=2G MinTmpDiskNode=0
+   Features=[intel14|intel16|intel18] DelayBoot=00:00:00
+   OverSubscribe=OK Contiguous=0 Licenses=(null) Network=(null)
+   Command=/mnt/ufs18/home-118/lotrecks/Classes/module-2-LUA/droneML3_jobScript.sb
+   WorkDir=/mnt/ufs18/home-118/lotrecks/Classes/module-2-LUA
+   Comment=stdout=/mnt/ufs18/home-118/lotrecks/Classes/module-2-LUA/slurm-58263081.out 
+   StdErr=/mnt/ufs18/home-118/lotrecks/Classes/module-2-LUA/slurm-58263081.out
+   StdIn=/dev/null
+   StdOut=/mnt/ufs18/home-118/lotrecks/Classes/module-2-LUA/slurm-58263081.out
+   Power=
+
+
+SLURM Job ID: 58263081
+WrkDir=/mnt/ufs18/home-118/lotrecks/Classes/module-2-LUA
+=========================================================================================================
+          JobID |            58263081 |      58263081.batch |     58263081.extern |          58263081.0 |
+        JobName |            droneML3 |               batch |              extern |              python |
+           User |            lotrecks |                     |                     |                     |
+       NodeList |             css-036 |             css-036 |             css-036 |             css-036 |
+         NNodes |                   1 |                   1 |                   1 |                   1 |
+         NTasks |                     |                   1 |                   1 |                   1 |
+          NCPUS |                   2 |                   2 |                   2 |                   2 |
+         ReqMem |                 2Gc |                 2Gc |                 2Gc |                 2Gc |
+      Timelimit |            11:59:00 |                     |                     |                     |
+        Elapsed |            09:13:50 |            09:13:50 |            09:13:50 |            09:13:45 |
+       TotalCPU |            09:13:41 |            00:00:01 |            00:00:00 |            09:13:41 |
+     AveCPULoad |            0.999729 |         3.00933e-05 |                     |             0.99988 |
+         MaxRSS |                     |               4488K |                     |             116412K |
+      MaxVMSize |                     |             162108K |                     |            1135688K |
+          Start | 2020-03-23T17:55:10 | 2020-03-23T17:55:10 | 2020-03-23T17:55:10 | 2020-03-23T17:55:14 |
+            End |             Unknown |             Unknown |             Unknown | 2020-03-24T03:08:59 |
+       ExitCode |                 0:0 |                 0:0 |                 0:0 |                 0:0 |
+          State |             RUNNING |             RUNNING |             RUNNING |           COMPLETED |
+=========================================================================================================
